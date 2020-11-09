@@ -1,0 +1,23 @@
+{
+  "name": "express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "npm run start",
+    "deploy": "cloudbase framework deploy",
+    "deploy:server": "cloudbase framework deploy node"
+  },
+  "dependencies": {
+    "@cloudbase/manager-node": "^3.8.1",
+    "@cloudbase/node-sdk": "^2.3.5",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6",
+    "serverless-http": "^2.6.0"
+  }
+}
