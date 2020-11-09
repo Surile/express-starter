@@ -3,12 +3,11 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const helmet = require('helmet')
 const morgan = require('morgan')
-const serverless = require('serverless-http')
 const cloudbase = require('@cloudbase/node-sdk')
 
 // 云开发初始化
 const manager = cloudbase.init({
-  env: 'shutter-9glsaf6f1f427087',
+  env: process.env.ENV_ID,
 })
 
 // 云数据初始化
